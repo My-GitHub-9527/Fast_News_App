@@ -21,5 +21,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MainActivity", "这是第二次修改");
         Log.d("MainActivity", "这是第二次修改");
         Log.d("MainActivity", "这是第二次修改");
+		Log.d("MainActivity", "这是第二次修改");
+		Log.d("MainActivity", "这是第二次修改");
+		Log.d("MainActivity", "这是第二次修改");
+		Log.d("MainActivity", "这是第二次修改");
+		Log.d("MainActivity", "这是第二次修改");
     }
 }
