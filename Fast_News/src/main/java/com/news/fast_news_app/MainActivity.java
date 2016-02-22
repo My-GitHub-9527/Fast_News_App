@@ -1,7 +1,8 @@
 package com.news.fast_news_app;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,8 +10,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		ImageButton iv = new ImageButton(this);
-		2016/2/222016/2/222016/2/222016/2/222016/2/22
-			ImageButtonImageButtonImageButton
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "这是第二次修改");
     }
 }
