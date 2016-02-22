@@ -10,21 +10,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-        Log.d("MainActivity", "这是第二次修改");
-		Log.d("MainActivity", "这是第二次修改");
-		Log.d("MainActivity", "这是第二次修改");
-		Log.d("MainActivity", "这是第二次修改");
-		Log.d("MainActivity", "这是第二次修改");
-		Log.d("MainActivity", "这是第二次修改");
+        Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
+    }
+    public void on(){
+
     }
 }
