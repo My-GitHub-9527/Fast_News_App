@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MainActivity", "");
         Log.d("MainActivity", "");
         Log.d("MainActivity", "");
+		Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
+        Log.d("MainActivity", "");
     }
     public void on(){
 
