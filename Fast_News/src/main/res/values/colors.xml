@@ -5,7 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="normal">#A9A9A9</color>
-    <color name="selected">#FF0000</color>
+    <color name="selected">#CD5C5C</color>
 
     <color name="bottom_bg">#a000</color>
 </resources>
