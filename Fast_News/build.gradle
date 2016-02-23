@@ -24,4 +24,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile files('libs/jsoup-1.8.3.jar')
+    compile project(':ViewPager_Indicator_Library')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:support-v4:+'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
 }

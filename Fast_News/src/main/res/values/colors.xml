@@ -7,5 +7,5 @@
     <color name="normal">#A9A9A9</color>
     <color name="selected">#FF0000</color>
 
-    <color name="bottom_bg">#a000</color>
+    <color name="bottom_bg">#fff</color>
 </resources>

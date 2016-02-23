@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fast_News/Fast_News.iml" filepath="$PROJECT_DIR$/Fast_News/Fast_News.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fast_News_App.iml" filepath="$PROJECT_DIR$/Fast_News_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPager_Indicator_Library/ViewPager_Indicator_Library.iml" filepath="$PROJECT_DIR$/ViewPager_Indicator_Library/ViewPager_Indicator_Library.iml" />
     </modules>
   </component>
 </project>

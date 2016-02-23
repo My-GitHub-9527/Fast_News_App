@@ -19,6 +19,9 @@ import com.news.fast_news_app.bottom_fragment.Bottom_Second;
 import com.news.fast_news_app.bottom_fragment.Bottom_Third;
 import com.news.fast_news_app.view.My_FragmentTabHost;
 
+/**
+ *
+ */
 public class MainActivity extends FragmentActivity {
     //定义FragmentTabHost对象
     private My_FragmentTabHost mTabHost;
@@ -52,34 +55,41 @@ public class MainActivity extends FragmentActivity {
         //toolbar = (Toolbar) findViewById(R.id.toolbar);
         initFragmentTabHost();
 
+
+
     }
 
-   public void initFragmentTabHost() {
-//实例化布局对象
-       layoutInflater = LayoutInflater.from(this);
-
-       //实例化TabHost对象，得到TabHost
-       mTabHost = (My_FragmentTabHost) findViewById(android.R.id.tabhost);
-       mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
-
-       //得到fragment的个数
-       int count = fragmentArray.length;
-
-       for (int i = 0; i < count; i++) {
-           //为每一个Tab按钮设置图标、文字和内容
-           TabHost.TabSpec tabSpec = mTabHost.newTabSpec(mTextviewArray[i]).setIndicator(getTabItemView(i));
-           //将Tab按钮添加进Tab选项卡中
-           mTabHost.addTab(tabSpec, fragmentArray[i], null);
-
-           //设置Tab按钮的背景
-           //mTabHost.getTabWidget().getChildAt(i).setAlpha(0.8f);
-           mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.color.bottom_bg);
-          // mTabHost.getTabWidget().setMinimumHeight(100);
-           mTabHost.getTabWidget().setDividerDrawable(null);
-       }
-   }
     /**
-     * 给Tab按钮设置图标和文字
+     * 初始化FragmentTabHost
+     */
+
+    public void initFragmentTabHost() {
+        //实例化布局对象
+        layoutInflater = LayoutInflater.from(this);
+
+        //实例化TabHost对象，得到TabHost
+        mTabHost = (My_FragmentTabHost) findViewById(android.R.id.tabhost);
+        mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+
+        //得到fragment的个数
+        int count = fragmentArray.length;
+
+        for (int i = 0; i < count; i++) {
+            //为每一个Tab按钮设置图标、文字和内容
+            TabHost.TabSpec tabSpec = mTabHost.newTabSpec(mTextviewArray[i]).setIndicator(getTabItemView(i));
+            //将Tab按钮添加进Tab选项卡中
+            mTabHost.addTab(tabSpec, fragmentArray[i], null);
+
+            //设置Tab按钮的背景
+            //mTabHost.getTabWidget().getChildAt(i).setAlpha(0.8f);
+            mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.color.bottom_bg);
+            mTabHost.getTabWidget().setMinimumHeight(100);
+            mTabHost.getTabWidget().setDividerDrawable(null);
+        }
+    }
+
+    /**
+     * 给底部TabHost按钮设置图标和文字
      */
     private View getTabItemView(int index) {
         View view = layoutInflater.inflate(R.layout.tabhost_item_view, null);
