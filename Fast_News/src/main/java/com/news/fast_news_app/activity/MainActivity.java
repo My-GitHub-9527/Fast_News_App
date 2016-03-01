@@ -2,7 +2,6 @@ package com.news.fast_news_app.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -18,11 +17,15 @@ import com.news.fast_news_app.bottom_fragment.Bottom_Fourth;
 import com.news.fast_news_app.bottom_fragment.Bottom_Second;
 import com.news.fast_news_app.bottom_fragment.Bottom_Third;
 import com.news.fast_news_app.view.My_FragmentTabHost;
+import com.tandong.swichlayout.BaseEffects;
+import com.tandong.swichlayout.SwitchLayout;
 
 /**
  *
  */
 public class MainActivity extends FragmentActivity {
+
+
     //定义FragmentTabHost对象
     private My_FragmentTabHost mTabHost;
 
@@ -39,23 +42,21 @@ public class MainActivity extends FragmentActivity {
     //Tab选项卡的文字
     private String mTextviewArray[] = {"首页", "消息", "好友", "广场", "更多"};
 
-    private Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
-
         //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//去掉信息栏
         setContentView(R.layout.activity_main);
+        SwitchLayout.animDuration=3000;
+        SwitchLayout.ScaleBig(this,false, BaseEffects.getQuickReScrollEffect());
+
         //透明状态栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         //透明导航栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         //toolbar = (Toolbar) findViewById(R.id.toolbar);
         initFragmentTabHost();
-
-
 
     }
 
@@ -85,6 +86,18 @@ public class MainActivity extends FragmentActivity {
             mTabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.color.bottom_bg);
             mTabHost.getTabWidget().setMinimumHeight(100);
             mTabHost.getTabWidget().setDividerDrawable(null);
+            mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+                @Override
+                public void onTabChanged(String tabId) {
+                    if (tabId.equals("更多")) {
+
+                    }else if(tabId.equals("消息")){
+
+                    }else {
+
+                    }
+                }
+            });
         }
     }
 

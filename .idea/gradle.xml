@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Fast_News" />
-            <option value="$PROJECT_DIR$/ViewPager_Indicator_Library" />
+            <option value="$PROJECT_DIR$/ViewPager_Orientation_Library" />
           </set>
         </option>
       </GradleProjectSettings>

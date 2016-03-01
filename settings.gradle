@@ -1,1 +1,1 @@
-include ':Fast_News', ':ViewPager_Indicator_Library'
+include ':Fast_News', ':ViewPager_Orientation_Library'
